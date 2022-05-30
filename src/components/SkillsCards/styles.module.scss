@@ -1,0 +1,29 @@
+.cards {
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 2rem;
+    // margin: 0 auto;
+
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1.5rem;
+    box-shadow: 3px 3px var(--primary-color);
+
+    img {
+        width: 250px;
+    }
+
+    dl {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

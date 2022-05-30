@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import SkillsCards from '../../components/SkillsCards';
 import styles from './styles.module.scss'
 
 export default function () {
@@ -7,7 +8,10 @@ export default function () {
             <Head>
                 <title>Home | Skills</title>
             </Head>
-            <h1 className={styles.title}>Hello world!</h1>
+            <div className="container">
+                <h1 className={styles.title}>Hello world!</h1>
+                <SkillsCards />
+            </div>
         </>
         
     );
