@@ -2,7 +2,7 @@ import Head from 'next/head';
 import SkillsCards from '../../components/SkillsCards';
 import styles from './styles.module.scss'
 
-export default function () {
+export default function skills() {
     return(
         <>
             <Head>

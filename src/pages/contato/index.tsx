@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaDiscord } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 
-export default function () {
+export default function pages() {
     return(
         <>
             <Head>

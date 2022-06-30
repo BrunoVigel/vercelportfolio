@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import styles from './styles.module.scss'
 import Head from 'next/head';
 
-export default function () {
+export default function projetos() {
     return (
         <>
             <Head>
