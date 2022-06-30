@@ -8,7 +8,7 @@ export default function ContactForm() {
   });
   
   // Update inputs value
-  const handleParam = () => (e: any) => {
+  const handleParam = () => (e) => {
     const name = e.target.name;
     const value = e.target.value;
     setQuery((prevState) => ({
@@ -17,7 +17,7 @@ export default function ContactForm() {
     }));
   };
   // Form Submit function
-  const formSubmit = (e: any) => {
+  const formSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData();
     Object.entries(query).forEach(([key, value]) => {
