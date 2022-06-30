@@ -1,0 +1,18 @@
+.ContactBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #26CC64;
+    z-index: 999;
+
+    svg {
+        color: white;
+        font-size: 2rem;
+    }
+}

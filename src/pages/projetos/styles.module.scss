@@ -1,0 +1,28 @@
+.section {
+    margin-top: 6rem;
+    .swiperContainer {
+        margin-top: 1rem;
+
+        .descricaoProjeto {
+            p:nth-child(1) {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+
+@media(min-width: 1500px) {
+
+    .swiperContainer {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .descricaoProjeto {
+        width: 70rem;
+    }
+}

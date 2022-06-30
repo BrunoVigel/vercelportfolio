@@ -1,0 +1,61 @@
+.modalOpenBtn {
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 2;
+}
+
+.header {
+    display: none;
+}
+
+@media(min-width:1050px) {
+    .modalOpenBtn {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        color: var(--primary-text-color);
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid #e4e4e4;
+        padding: 0 20rem;
+        z-index: 2;
+        
+
+        ul {
+            width: 100%;
+            display: flex;
+            gap: 1.5rem;
+            padding: 1rem 0;
+
+            li {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: var(--primary-color);
+                    height: 2px;
+                    width: 0;
+                    left: 0;
+                    bottom: -16px;
+                    transition: 0.3s;
+                }
+    
+                &:hover::after,
+                &.activeLink::after {
+                    width: 100%;
+                }
+                a {
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+    }
+}

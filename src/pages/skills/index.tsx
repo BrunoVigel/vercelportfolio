@@ -9,7 +9,7 @@ export default function () {
                 <title>Home | Skills</title>
             </Head>
             <div className="container">
-                <h1 className={styles.title}>Hello world!</h1>
+                {/* <h1 className={styles.title}>Hello world!</h1> */}
                 <SkillsCards />
             </div>
         </>

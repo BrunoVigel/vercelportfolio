@@ -7,7 +7,20 @@
 :root {
   // variáveis de cor
   --primary-color: #a972cb;
+  --primary-text-color: #000000ad;
 
+}
+
+body {
+  // background-color: #121214;
+  color: white;
+  background-color: white;
+  color: var(--primary-text-color);
+  padding-top: 2.2rem;
+}
+
+img {
+  width: 100%;
 }
 
 @media(max-width: 1080px) {
@@ -29,6 +42,8 @@ body, input, textarea, select, button {
 
 button {
   cursor: pointer;
+  border:none;
+  background: none;
 }
 
 a {
@@ -36,6 +51,55 @@ a {
   text-decoration: none;
 }
 
+
+ul {
+  list-style: none;
+}
+
 .container {
-  padding: 0 15rem;
+  padding: 0 2.5rem;
+  // margin-top: 4rem;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 100vh;
+  border: 2px solid #292929;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#4d4c4c;
+  border:#4d4c4c;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(-400px);
+  transition: all 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateY(0px);
+  z-index: 999;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+
+@media(min-width:1050px) {
+  .container {
+    padding: 0 20rem;
+  }
 }
