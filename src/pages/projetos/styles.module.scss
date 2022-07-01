@@ -10,19 +10,72 @@
             }
         }
     }
+
+    .githubCall {
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        svg {
+            max-width: 25rem;
+        }
+
+        div {
+            text-align: center;
+
+                p:nth-child(1) {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                p:nth-child(2) {
+                    font-size: 1.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                button {
+                    color: white;
+                    background-color: var(--primary-color);
+                    padding: 1rem;
+                    border-radius: 2rem;
+                    transition: 0.2s;
+                }
+
+                
+            }
+    }
+    
 }
 
 
 
 @media(min-width: 1500px) {
+    .section {
+        .swiperContainer {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+    
+        .descricaoProjeto {
+            width: 70rem;
+        }
+    
+        .githubCall {
+            flex-direction: row;
+            gap: 3rem;
 
-    .swiperContainer {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-    }
+            div {
+                text-align: start;
 
-    .descricaoProjeto {
-        width: 70rem;
+                button {
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
     }
 }

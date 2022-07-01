@@ -9,13 +9,11 @@ interface HeaderProps {
 
 export default function Header({onOpenModal}: HeaderProps) {
     const router = useRouter()
-    console.log(router.pathname)
 
-    router.pathname == '/' ? console.log('sim') : console.log('não');
 
     return(
             <>
-                <button className={styles.modalOpenBtn} type="button" onClick={onOpenModal}><MdMenu style={{color: 'black', fontSize: '48px'}}/></button>
+                <button className={styles.modalOpenBtn} type="button" onClick={onOpenModal}><MdMenu style={{color: '#a972cb', fontSize: '32px'}}/></button>
                 <header className={styles.header}>
                     <nav>
                         <ul>
