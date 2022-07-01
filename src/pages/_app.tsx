@@ -30,7 +30,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Header onOpenModal={handleOpenModal}/>
       <NavModal isOpen={isModalOpen} onRequestClose={handleCloseModal}/>
       <Component {...pageProps} />
-      {/* {asPath !== '/contato' ? <Footer/> : null} */}
       <Footer/>
       <ContactBnt />
     </>

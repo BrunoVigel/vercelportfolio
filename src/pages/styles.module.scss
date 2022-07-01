@@ -1,0 +1,77 @@
+.projectsHome {
+    margin-top: 7rem;
+    text-align: center;
+
+    p:nth-child(1) {
+        margin-bottom: 3rem;
+        font-size:2rem;
+        font-weight: bold;
+    }
+
+    .swiperContainer {
+        margin-bottom: 3rem;
+    }
+
+    a {
+        margin-top: 3rem;
+        color: white;
+        background-color: var(--primary-color);
+        padding: 1rem 2rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 2rem;
+        transition: .2s;
+
+        &:hover {
+            color: var(--primary-color);
+            background-color: white;
+        }
+    }
+
+    .swiperContainer {
+        .descricaoProjeto {
+            p:nth-child(1) {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.SectionCardHome {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p:nth-child(1) {
+        font-size:2rem;
+        font-weight: bold;
+    }
+
+    a {
+        margin-top: 3rem;
+        color: white;
+        background-color: var(--primary-color);
+        padding: 1rem 2rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 2rem;
+        transition: .2s;
+
+        &:hover {
+            color: var(--primary-color);
+            background-color: white;
+        }
+    }
+}
+
+@media(min-width: 1500px) {
+
+    .projectsHome {
+        .swiperContainer {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+    }
+}
