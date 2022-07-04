@@ -16,6 +16,10 @@ export default function Home() {
         <title>Home | Portfolio</title>
       </Head>
 
+      <div className={styles.hero}>
+        
+      </div>
+
       <div className="container">
         <div className={styles.projectsHome}>
           <p>Projetos</p>

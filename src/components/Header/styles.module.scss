@@ -23,7 +23,7 @@
         top: 0;
         left: 0;
         border-bottom: 1px solid #e4e4e4;
-        padding: 0 20rem;
+        padding: 0 10rem;
         z-index: 2;
         
 
@@ -61,5 +61,11 @@
                 }
             }
         }
+    }
+}
+
+@media(min-width: 1270px) {
+    .header {
+        padding: 0 20rem;
     }
 }

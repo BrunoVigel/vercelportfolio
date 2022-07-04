@@ -1,15 +1,31 @@
 .section {
     margin-top: 6rem;
-    .swiperContainer {
-        margin-top: 1rem;
 
-        .descricaoProjeto {
-            p:nth-child(1) {
-                font-size: 2rem;
-                font-weight: bold;
+    .projectContainer {
+        padding: 4rem 0;        
+
+        .swiperContainer {
+            padding: 0 2.5rem;
+            
+            .descricaoProjeto {
+                p:nth-child(1) {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
             }
         }
     }
+
+    .projectContainer.bgPrimary {
+        background-color: var(--primary-color);
+        color:white;
+    }
+
+    .projectContainer.bgWhite {
+        background-color: white;
+        color: var(--primary-text-color)
+    }
+    
 
     .githubCall {
         margin: 4rem 0;
@@ -24,42 +40,42 @@
         div {
             text-align: center;
 
-                p:nth-child(1) {
-                    font-size: 2rem;
-                    font-weight: bold;
-                }
-
-                p:nth-child(2) {
-                    font-size: 1.5rem;
-                    margin-bottom: 2rem;
-                }
-
-                button {
-                    color: white;
-                    background-color: var(--primary-color);
-                    padding: 1rem;
-                    border-radius: 2rem;
-                    transition: 0.2s;
-                }
-
-                
+            p:nth-child(1) {
+                font-size: 2rem;
+                font-weight: bold;
             }
+
+            p:nth-child(2) {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            button {
+                color: white;
+                background-color: var(--primary-color);
+                padding: 1rem;
+                border-radius: 2rem;
+                transition: 0.2s;
+            }
+        }
     }
-    
 }
 
 
 
-@media(min-width: 1500px) {
+@media(min-width: 1050px) {
     .section {
-        .swiperContainer {
-            display: flex;
-            align-items: center;
-            gap: 3rem;
+        .projectContainer {
+            padding: 6rem 0;
+            .swiperContainer {
+                padding: 0 10rem;
+
+                
+            }
         }
-    
+
         .descricaoProjeto {
-            width: 70rem;
+            max-width: 25rem;
         }
     
         .githubCall {
@@ -75,6 +91,28 @@
                         transform: translateY(-5px);
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 1270px) {
+    .section {
+        .projectContainer {
+            .swiperContainer {
+                padding: 0 20rem;   
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .section {
+        .projectContainer {
+            .swiperContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
             }
         }
     }

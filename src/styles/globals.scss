@@ -58,7 +58,6 @@ ul {
 
 .container {
   padding: 0 2.5rem;
-  // margin-top: 4rem;
 }
 
 ::-webkit-scrollbar {
@@ -98,8 +97,26 @@ ul {
 }
 
 
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color) !important;
+}
+
 @media(min-width:1050px) {
   .container {
-    padding: 0 20rem;
+    padding: 0 10rem;
+  }
+
+  .swiper {
+    margin: 0 !important;
+  }
+
+  .swiper-wrapper {
+    max-width: 45rem;
+  }
+}
+
+@media(min-width: 1270px) {
+  .container {
+      padding: 0 20rem;
   }
 }
