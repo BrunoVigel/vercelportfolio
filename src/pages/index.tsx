@@ -8,6 +8,7 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Typewritter } from "../components/Typewritter";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
         <title>Home | Portfolio</title>
       </Head>
 
-      <div className={styles.hero}>
-        
+      <div className={`${styles.hero} container`}>
+        <img src="/images/avatar.png" alt="" />
+        <Typewritter />
       </div>
 
       <div className="container">

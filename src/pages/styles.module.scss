@@ -1,3 +1,13 @@
+.hero {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        border-radius: 50%;
+    }
+}
+
 .projectsHome {
     margin-top: 7rem;
     text-align: center;
@@ -60,6 +70,14 @@
         &:hover {
             color: var(--primary-color);
             background-color: white;
+        }
+    }
+}
+
+@media(min-width: 1050px) {
+    .hero {
+        img {
+            max-width: 300px;
         }
     }
 }
