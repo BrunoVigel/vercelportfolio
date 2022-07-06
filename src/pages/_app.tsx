@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Footer from '../components/Footer'
 import { useRouter } from 'next/router'
 import { ContactBnt } from '../components/ContactBtn'
+import NextNProgress from 'nextjs-progressbar';
 
 Modal.setAppElement('#__next')
 
@@ -27,9 +28,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+     
       <Header onOpenModal={handleOpenModal}/>
       <NavModal isOpen={isModalOpen} onRequestClose={handleCloseModal}/>
       <Component {...pageProps} />
+      <NextNProgress color='#a972cb' />
       <Footer/>
       <ContactBnt />
     </>

@@ -81,7 +81,7 @@ ul {
 
 .ReactModal__Overlay {
   opacity: 0;
-  transform: translateY(-400px);
+  transform: translateY(-800px);
   transition: all 200ms ease-in-out;
 }
 
@@ -93,7 +93,7 @@ ul {
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
-  transform: translateY(-400px);
+  transform: translateY(-800px);
 }
 
 

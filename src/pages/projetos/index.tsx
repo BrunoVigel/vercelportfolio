@@ -62,7 +62,7 @@ export default function projetos() {
                         </Swiper>
                         <div className={styles.descricaoProjeto}>
                                 <p>Ignews</p>
-                                <p>Projeto de Blog pessoal com opção de inscrição paga desenvolivida com React, Typescript, Jamstack com Stripe, FaunaDB e Prismic. Também utilizado Jest para os testes unitários.</p>
+                                <p>Projeto de Blog pessoal com opção de inscrição paga desenvolivida com React, Next, Typescript, Jamstack com Stripe, FaunaDB e Prismic. Também utilizado Jest para os testes unitários.</p>
                         </div>
                     </div>
                 </div>
