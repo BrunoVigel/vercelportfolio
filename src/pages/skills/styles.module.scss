@@ -1,3 +1,13 @@
-.title {
-    color: red;
+.SkillsPageContainer{
+    animation: Fadein .3s;
 }
+
+@keyframes Fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

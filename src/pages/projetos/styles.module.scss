@@ -1,5 +1,6 @@
 .section {
     margin-top: 6rem;
+    animation: Fadein .3s;
 
     .projectContainer {
         padding: 4rem 0;        
@@ -117,3 +118,13 @@
         }
     }
 }
+
+@keyframes Fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

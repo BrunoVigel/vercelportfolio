@@ -8,7 +8,11 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Typewritter } from "../components/Typewritter";
+import Image from "next/image";
+import HeroSVG from '../../public/images/svgs/hero.svg'
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 
 
 export default function Home() {
@@ -19,9 +23,16 @@ export default function Home() {
       </Head>
 
       <div className={`${styles.hero} container`}>
-        <img src="/images/avatar.png" alt="" />
-        <Typewritter />
-        <a href="#projetos">próx</a>
+          <div className={styles.apresentacao}>
+            <h1>
+              <Typewriter words={['Olá, eu sou o Bruno, Desenvolvedor Front-end']} cursor cursorStyle='|' />
+            </h1>
+            <div className={styles.socials}>
+              <a href=""><FaLinkedin fontSize={48}/></a>
+              <a href=""><FaGithub  fontSize={48}/></a>
+            </div>
+          </div>
+        <Image className={styles.img} src={HeroSVG}/>
       </div>
 
       <div className="container">

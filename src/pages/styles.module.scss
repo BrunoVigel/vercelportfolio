@@ -1,17 +1,35 @@
 .hero {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    img {
-        border-radius: 50%;
+    animation: Fadein .3s;
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .socials {
+            margin: 2rem 0;
+            a {
+                &:nth-child(1) {
+                    margin-right: .75rem;
+                }
+            }
+        }
     }
 }
 
 .projectsHome {
     margin-top: 7rem;
     text-align: center;
+    animation: Fadein .3s;
 
     p:nth-child(1) {
         margin-bottom: 3rem;
@@ -77,14 +95,20 @@
 
 @media(min-width: 1050px) {
     .hero {
+        flex-direction: row;
+
+        .apresentacao {
+            width: 900px;
+        }
         img {
-            max-width: 300px;
+            max-width: 900px !important;
         }
     }
 }
 
 @media(min-width: 1500px) {
     .projectsHome {
+        max-width: 100%;
         .swiperContainer {
             display: flex;
             align-items: center;
@@ -92,3 +116,15 @@
         }
     }
 }
+
+
+
+@keyframes Fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
