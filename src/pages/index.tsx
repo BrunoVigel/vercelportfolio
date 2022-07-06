@@ -10,7 +10,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Typewritter } from "../components/Typewritter";
 
-import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -79,8 +78,6 @@ export default function Home() {
           <Link href="/skills">Ver stack completa</Link>
         </div>
       </div>
-      <Script>{`var a = document.querySelector('#projetos')
-                console.log(a)`}</Script>
     </>
   );
 }
