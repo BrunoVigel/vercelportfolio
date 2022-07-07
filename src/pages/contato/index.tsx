@@ -16,7 +16,7 @@ export default function pages() {
             </Head>
             
             <div className={`${styles.ContactPageContainer} container`}>
-                <PageTitle title="Título da página" subtitle="Aqui fica o subtitle que é uma explicação do conteúdo da página"/>
+                <PageTitle title="Entre em contato!" subtitle="Sinta-se a vontade para me contatar qualquer horário do dia"/>
 
                 <div className={styles.socialsSection}>
                     <Image className={styles.img} src={contactSVG}/>

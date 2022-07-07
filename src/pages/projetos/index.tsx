@@ -13,7 +13,7 @@ export default function projetos() {
                 <title>Projetos | Skills</title>
             </Head>
             <section className={`${styles.section}`}>
-                <PageTitle className='container' title="Título da página" subtitle="Aqui fica o subtitle que é uma explicação do conteúdo da página"/>
+                <PageTitle className='container' title="Projetos" subtitle="Alguns de meus melhores projetos desenvolvidos"/>
 
                 <div className={`${styles.projectContainer} ${styles.bgWhite}`}>
                     <div className={styles.swiperContainer}>
@@ -22,69 +22,12 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
+                                    <img src="/images/dtmoney/captura1.png" alt="Imagem do projeto" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
+                                    <img src="/images/dtmoney/captura2.png" alt="Imagem do projeto" />
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                        </Swiper>
-                        <div className={styles.descricaoProjeto}>
-                                <p>ReactStore</p>
-                                <p>Projeto de ecommerce de roupas e materais eletrônicos desenvolvido com React, Redux, Bootstrap e React Hoooks</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div className={`${styles.projectContainer} ${styles.bgPrimary}`}>
-                    <div className={styles.swiperContainer}>
-                        <Swiper
-                            modules={[Pagination]}
-                            pagination={{ clickable: true }}
-                            >
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                        </Swiper>
-                        <div className={styles.descricaoProjeto}>
-                                <p>Ignews</p>
-                                <p>Projeto de Blog pessoal com opção de inscrição paga desenvolivida com React, Next, Typescript, Jamstack com Stripe, FaunaDB e Prismic. Também utilizado Jest para os testes unitários.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={`${styles.projectContainer} ${styles.bgWhite}`}>
-                    <div className={styles.swiperContainer}>
-                        <Swiper
-                            modules={[Pagination]}
-                            pagination={{ clickable: true }}
-                            >
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
                         </Swiper>
                         <div className={styles.descricaoProjeto}>
                                 <p>DtMoney</p>
@@ -100,16 +43,13 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
+                                    <img src="/images/impulse/captura1.png" alt="Imagem do projeto" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
+                                    <img src="/images/impulse/captura2.png" alt="Imagem do projeto" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src="/images/print1.png" alt="Imagem do projeto" />
+                                    <img src="/images/impulse/captura3.png" alt="Imagem do projeto" />
                                 </SwiperSlide>
                         </Swiper>
                         <div className={styles.descricaoProjeto}>

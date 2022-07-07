@@ -18,21 +18,44 @@
         .socials {
             margin: 2rem 0;
             a {
+                transition: .3s;
                 &:nth-child(1) {
                     margin-right: .75rem;
+                }
+
+                &:hover {
+                    color: var(--primary-color)
                 }
             }
         }
     }
 }
 
+.aboutMe {
+    margin-top: 7rem;
+
+    .text {
+        text-align: center;
+
+        p:nth-child(1) {
+            font-size:2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 .projectsHome {
     margin-top: 7rem;
-    text-align: center;
     animation: Fadein .3s;
+    text-align: center;
+
+    & > p {
+        margin-bottom: 3rem;
+    }
+
 
     p:nth-child(1) {
-        margin-bottom: 3rem;
         font-size:2rem;
         font-weight: bold;
     }
@@ -58,6 +81,7 @@
 
     .swiperContainer {
         .descricaoProjeto {
+            text-align: left;
             p:nth-child(1) {
                 font-size: 2rem;
                 font-weight: bold;
@@ -103,6 +127,33 @@
         img {
             max-width: 900px !important;
         }
+    }
+
+    .aboutMe {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .text {
+            text-align: left;
+            max-width: 600px;
+
+            p {
+                font-size: 1.5rem;
+            }
+    
+            p:nth-child(1) {
+                font-size:2.5rem;
+            }
+        }
+    }
+
+    .projectsHome > p {
+        font-size: 2.5rem !important;
+    }
+
+    .SectionCardHome p:nth-child(1) {
+        font-size:2.5rem;
     }
 }
 

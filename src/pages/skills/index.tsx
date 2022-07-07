@@ -10,7 +10,7 @@ export default function skills() {
                 <title>Home | Skills</title>
             </Head>
             <div className={`${styles.SkillsPageContainer} container`}>
-                <PageTitle title="Título da página" subtitle="Aqui fica o subtitle que é uma explicação do conteúdo da página"/>
+                <PageTitle title="Stack" subtitle="Linguagens, bibliotecas e frameworks que utilizo no desenvolvimentos de minhas aplicações"/>
                 <SkillsCards />
                 <img src="../" alt="" />
             </div>

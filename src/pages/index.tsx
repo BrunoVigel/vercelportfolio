@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import HeroSVG from '../../public/images/svgs/hero.svg'
+import AboutSVG from '../../public/images/svgs/aboutme.svg'
 import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -35,33 +36,30 @@ export default function Home() {
         <Image className={styles.img} src={HeroSVG}/>
       </div>
 
+      <div className={`${styles.aboutMe} container`}>
+        {/* <img src="/images/avatar.png" alt="" /> */}
+        <Image className={styles.img} src={AboutSVG}/>
+        <div className={styles.text}>
+          <p>Sobre mim</p>
+          <p>Olá! Meu nome é Bruno, tenho 22 anos e sou desenvolvedor FrontEnd. Apaixonado por aprender novas tecnologias e técnicas, pensando na funcionalidade das aplicações e na forma mais limpa de desenvolvê-las.</p>
+        </div>
+      </div>
+
       <div className="container">
-        <div className={styles.projectsHome} id="projetos">
+        <div className={styles.projectsHome}>
           <p>Projetos</p>
           <div className={styles.swiperContainer}>
             <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
               <SwiperSlide>
-                <img src="/images/print1.png" alt="Imagem do projeto" />
+                <img src="/images/dtmoney/captura1.png" alt="Imagem do projeto" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/print1.png" alt="Imagem do projeto" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/images/print1.png" alt="Imagem do projeto" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="/images/print1.png" alt="Imagem do projeto" />
+                <img src="/images/dtmoney/captura2.png" alt="Imagem do projeto" />
               </SwiperSlide>
             </Swiper>
             <div className={styles.descricaoProjeto}>
-              <p>ReactStore</p>
-              <p>Projeto para ecommerce desenvolivdo com:</p>
-              <ul>
-                <li>- React</li>
-                <li>- React Hooks</li>
-                <li>- Redux</li>
-                <li>- Bootstrap</li>
-              </ul>
+              <p>DtMoney</p>
+              <p>Projeto de aplicação financeira desenvolvida com React, Typescript, Styled Components e MirajeJS.</p>
             </div>
           </div>
           <Link href="/projetos">Ver todos os projetos</Link>
