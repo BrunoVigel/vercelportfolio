@@ -28,8 +28,8 @@ export default function Home() {
               <Typewriter words={['Bruno Vigel, Desenvolvedor Front-end']} cursor cursorStyle='|' />
             </h1>
             <div className={styles.socials}>
-              <a target="_blank" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin fontSize={48}/></a>
-              <a target="_blank" href="https://github.com/BrunoVigel"><FaGithub  fontSize={48}/></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin fontSize={48}/></a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel"><FaGithub  fontSize={48}/></a>
             </div>
           </div>
         <Image className={styles.img} src={HeroSVG}/>

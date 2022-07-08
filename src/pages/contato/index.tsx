@@ -22,16 +22,16 @@ export default function pages() {
                     <Image className={styles.img} src={contactSVG}/>
                     <ul>
                         <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin /> Bruno Vigel</a>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin /> Bruno Vigel</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://github.com/BrunoVigel"><FaGithub  /> BrunoVigel</a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel"><FaGithub  /> BrunoVigel</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.instagram.com/brunovigel"><FaInstagram /> @BrunoVigel</a>
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/brunovigel"><FaInstagram /> @BrunoVigel</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://discord.com/users/321397092306124801"><FaDiscord />Vigel#0484</a>
+                            <a target="_blank" rel="noreferrer" href="https://discord.com/users/321397092306124801"><FaDiscord />Vigel#0484</a>
                         </li>
                         <li>
                             <a href=""><FiMail/>brunorosav@gmail.com</a>

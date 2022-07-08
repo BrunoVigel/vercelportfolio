@@ -32,7 +32,7 @@ export default function projetos() {
                         <div className={styles.descricaoProjeto}>
                                 <p>DtMoney</p>
                                 <p>Projeto de aplicação financeira desenvolvida com React, Typescript, Styled Components e MirajeJS.</p>
-                                <button><a target="_blank" href="https://github.com/BrunoVigel/dtmoney">Acessar repositório</a></button>
+                                <button><a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/dtmoney">Acessar repositório</a></button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default function projetos() {
                         <div className={styles.descricaoProjeto}>
                                 <p>Impulse feedback</p>
                                 <p>Projeto de Widget de feedback utilizando React, Typescript e Tailwind CSS.</p>
-                                <a target="_blank" href="https://github.com/BrunoVigel/impulse-web">Acessar repositório</a>
+                                <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/impulse-web">Acessar repositório</a>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function projetos() {
                     <div>
                         <p>Me siga no Github</p>
                         <p>Fique por dentro dos últimos projetos que estou trabalhando.</p>
-                        <button><a target="_blank" href="https://github.com/BrunoVigel/">Github</a></button>
+                        <button><a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/">Github</a></button>
                     </div>
                 </div>
             </section>
