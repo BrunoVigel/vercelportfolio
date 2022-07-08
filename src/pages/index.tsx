@@ -3,7 +3,6 @@ import Link from "next/link";
 import { SkillCard } from "../../skills";
 import stylesSkills from "../components/SkillsCards/styles.module.scss";
 import styles from "./styles.module.scss";
-
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -26,18 +25,17 @@ export default function Home() {
       <div className={`${styles.hero} container`}>
           <div className={styles.apresentacao}>
             <h1>
-              <Typewriter words={['Olá, eu sou o Bruno, Desenvolvedor Front-end']} cursor cursorStyle='|' />
+              <Typewriter words={['Bruno Vigel, Desenvolvedor Front-end']} cursor cursorStyle='|' />
             </h1>
             <div className={styles.socials}>
-              <a href=""><FaLinkedin fontSize={48}/></a>
-              <a href=""><FaGithub  fontSize={48}/></a>
+              <a target="_blank" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin fontSize={48}/></a>
+              <a target="_blank" href="https://github.com/BrunoVigel"><FaGithub  fontSize={48}/></a>
             </div>
           </div>
         <Image className={styles.img} src={HeroSVG}/>
       </div>
 
       <div className={`${styles.aboutMe} container`}>
-        {/* <img src="/images/avatar.png" alt="" /> */}
         <Image className={styles.img} src={AboutSVG}/>
         <div className={styles.text}>
           <p>Sobre mim</p>
@@ -51,15 +49,18 @@ export default function Home() {
           <div className={styles.swiperContainer}>
             <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
               <SwiperSlide>
-                <img src="/images/dtmoney/captura1.png" alt="Imagem do projeto" />
+                <img src="/images/impulse/captura1.png" alt="Imagem do projeto" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/dtmoney/captura2.png" alt="Imagem do projeto" />
+                <img src="/images/impulse/captura2.png" alt="Imagem do projeto" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="/images/impulse/captura3.png" alt="Imagem do projeto" />
               </SwiperSlide>
             </Swiper>
             <div className={styles.descricaoProjeto}>
-              <p>DtMoney</p>
-              <p>Projeto de aplicação financeira desenvolvida com React, Typescript, Styled Components e MirajeJS.</p>
+              <p>Impulse feedback</p>
+              <p>Projeto de Widget de feedback utilizando React, Typescript e Tailwind CSS.</p>
             </div>
           </div>
           <Link href="/projetos">Ver todos os projetos</Link>
