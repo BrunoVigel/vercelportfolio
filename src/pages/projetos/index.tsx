@@ -32,7 +32,10 @@ export default function projetos() {
                         <div className={styles.descricaoProjeto}>
                                 <p>DtMoney</p>
                                 <p>Projeto de aplicação financeira desenvolvida com React, Typescript, Styled Components e MirajeJS.</p>
-                                <button><a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/dtmoney">Acessar repositório</a></button>
+                                <div>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/dtmoney">Acessar repositório</a>
+                                    <a target="_blank" rel="noreferrer" href="https://dtmoney-one-mu.vercel.app/">Acessar projeto</a>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +59,10 @@ export default function projetos() {
                         <div className={styles.descricaoProjeto}>
                                 <p>Impulse feedback</p>
                                 <p>Projeto de Widget de feedback utilizando React, Typescript e Tailwind CSS.</p>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/impulse-web">Acessar repositório</a>
+                                <div>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/impulse-web">Acessar repositório</a>
+                                    <a target="_blank" rel="noreferrer" href="https://impulse-web.vercel.app/">Acessar projeto</a>
+                                </div>
                         </div>
                     </div>
                 </div>
