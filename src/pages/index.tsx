@@ -67,7 +67,7 @@ export default function Home() {
         </div>
 
         <div className={styles.SectionCardHome}>
-          <p>Minha stack</p>
+          <p>Minha skills</p>
           <div className={stylesSkills.cards}>
             {Object.entries(SkillCard).map(([key, value]) => {
               if (

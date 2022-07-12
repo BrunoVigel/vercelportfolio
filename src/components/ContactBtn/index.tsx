@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export function ContactBnt() {
     return(
-        <a href="https://api.whatsapp.com/send?phone=+555195569237" className={styles.ContactBtn}>
+        <a href="https://wa.me/5551995569237" className={styles.ContactBtn}>
             <FaWhatsapp/>
         </a>
     )
