@@ -85,7 +85,7 @@ export default function Home() {
               }
             })}
           </div>
-          <Link href="/skills">Ver stack completa</Link>
+          <Link href="/skills">Ver todas skills</Link>
         </div>
       </div>
     </>
