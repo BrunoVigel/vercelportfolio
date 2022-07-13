@@ -9,7 +9,7 @@ export default function SkillsCards() {
             return(
               <div className={styles.card} key={key}>
                <img src={value.image.source} alt="" />
-                <dl>{value.title}</dl>
+                <dt>{value.title}</dt>
                 <dd>
                  {value.definition}
                </dd>

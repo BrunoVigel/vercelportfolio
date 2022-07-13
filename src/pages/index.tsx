@@ -78,7 +78,7 @@ export default function Home() {
                 return (
                   <div className={stylesSkills.card} key={key}>
                     <img src={value.image.source} alt="" />
-                    <dl>{value.title}</dl>
+                    <dt>{value.title}</dt>
                     <dd>{value.definition}</dd>
                   </div>
                 );
