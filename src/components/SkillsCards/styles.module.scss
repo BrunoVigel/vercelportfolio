@@ -30,3 +30,10 @@
         font-weight: bold;
     }
 }
+
+@media(max-width:1400px) {
+.card {
+    max-width: 300px;
+}
+
+}
