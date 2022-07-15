@@ -10,8 +10,13 @@ export default function projetos() {
     return (
         <>
             <Head>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta charSet="utf-8"/>
+                <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
+                <meta name="description" content="Bruno Vigel Desenvolvedor Front-End, página de projetos"/>
                 <title>Projetos | Skills</title>
             </Head>
+
             <section className={`${styles.section}`}>
                 <PageTitle className='container' title="Projetos" subtitle="Alguns de meus melhores projetos desenvolvidos"/>
 

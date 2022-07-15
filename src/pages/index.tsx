@@ -19,6 +19,11 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8"/>
+        <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="author" content="Bruno Vigel"/>
+        <meta name="description" content="Bruno Vigel Desenvolvedor Front-End"/>
         <title>Home | Portfolio</title>
       </Head>
 
@@ -32,11 +37,11 @@ export default function Home() {
               <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel"><FaGithub  fontSize={48}/></a>
             </div>
           </div>
-        <Image className={styles.img} src={HeroSVG}/>
+        <Image className={styles.img} src={HeroSVG} alt="Imagem hero"/>
       </div>
 
       <div className={`${styles.aboutMe} container`}>
-        <Image className={styles.img} src={AboutSVG}/>
+        <Image className={styles.img} src={AboutSVG} alt="Imagem sobre mim"/>
         <div className={styles.text}>
           <p>Sobre mim</p>
           <p>Olá! Meu nome é Bruno, tenho 22 anos e sou desenvolvedor FrontEnd. Apaixonado por aprender novas tecnologias e técnicas, pensando na funcionalidade das aplicações e na forma mais limpa de desenvolvê-las.</p>
@@ -49,13 +54,13 @@ export default function Home() {
           <div className={styles.swiperContainer}>
             <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
               <SwiperSlide>
-                <img src="/images/impulse/captura1.png" alt="Imagem do projeto" />
+                <img src="/images/impulse/captura1.png" alt="Imagem do projeto"/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/impulse/captura2.png" alt="Imagem do projeto" />
+                <img src="/images/impulse/captura2.png" alt="Imagem do projeto"/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/impulse/captura3.png" alt="Imagem do projeto" />
+                <img src="/images/impulse/captura3.png" alt="Imagem do projeto"/>
               </SwiperSlide>
             </Swiper>
             <div className={styles.descricaoProjeto}>

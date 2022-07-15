@@ -8,11 +8,13 @@ export default function SkillsCards() {
           {Object.entries(SkillCard).map(([key, value]) => {
             return(
               <div className={styles.card} key={key}>
-               <img src={value.image.source} alt="" />
-                <dt>{value.title}</dt>
-                <dd>
-                 {value.definition}
-               </dd>
+               <img src={value.image.source} alt={value.image.alt} />
+                <dl>
+                  <dt>{value.title}</dt>
+                  <dd>
+                   {value.definition}
+                  </dd>
+                </dl>
               </div>
             )
           })}

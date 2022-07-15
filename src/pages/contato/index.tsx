@@ -12,6 +12,10 @@ export default function pages() {
     return(
         <>
             <Head>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta charSet="utf-8"/>
+                <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
+                <meta name="description" content="Bruno Vigel Desenvolvedor Front-End, página de contato"/>
                 <title>Contato | Skills</title>
             </Head>
             
@@ -19,7 +23,7 @@ export default function pages() {
                 <PageTitle title="Entre em contato!" subtitle="Sinta-se a vontade para me contatar qualquer horário do dia"/>
 
                 <div className={styles.socialsSection}>
-                    <Image className={styles.img} src={contactSVG}/>
+                    <Image className={styles.img} src={contactSVG} alt="Imagem da página de contato"/>
                     <ul>
                         <li>
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/brunovigel/"><FaLinkedin /> Bruno Vigel</a>
