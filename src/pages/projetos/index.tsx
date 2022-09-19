@@ -72,6 +72,59 @@ export default function projetos() {
                     </div>
                 </div>
 
+                <div className={`${styles.projectContainer} ${styles.bgWhite}`}>
+                    <div className={styles.swiperContainer}>
+                        <Swiper
+                            modules={[Pagination]}
+                            pagination={{ clickable: true }}
+                            >
+                                <SwiperSlide>
+                                    <img src="/images/todo/captura1.png" alt="Imagem do projeto" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="/images/todo/captura2.png" alt="Imagem do projeto" />
+                                </SwiperSlide>
+
+                        </Swiper>
+                        <div className={styles.descricaoProjeto}>
+                                <p>Todo List</p>
+                                <p>Projeto de lista de tarefas desenvolvida com React e Typescript.</p>
+                                <div>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/DesafioTodo">Acessar repositório</a>
+                                    <a target="_blank" rel="noreferrer" href="https://todo-ten-beta.vercel.app/">Acessar projeto</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={`${styles.projectContainer} ${styles.bgPrimary}`}>
+                    <div className={styles.swiperContainer}>
+                        <Swiper
+                            modules={[Pagination]}
+                            pagination={{ clickable: true }}
+                            >
+                                <SwiperSlide>
+                                    <img src="/images/timer/captura1.png" alt="Imagem do projeto" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="/images/timer/captura2.png" alt="Imagem do projeto" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src="/images/timer/captura3.png" alt="Imagem do projeto" />
+                                </SwiperSlide>
+
+                        </Swiper>
+                        <div className={styles.descricaoProjeto}>
+                                <p>Ignite Timer</p>
+                                <p>Projeto de Timer desenvolvida com React, Styled Components e Typescript.</p>
+                                <div>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/Iginite-Timer">Acessar repositório</a>
+                                    <a target="_blank" rel="noreferrer" href="https://timer-beryl.vercel.app/">Acessar projeto</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
                 
 
                 <div className={`${styles.githubCall} container`}>
