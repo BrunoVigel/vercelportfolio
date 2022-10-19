@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import styles from './styles.module.scss'
 import Head from 'next/head';
 import { PageTitle } from '../../components/PageTitle';
+import Image from 'next/image';
 
 export default function projetos() {
     return (
@@ -27,10 +28,10 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/dtmoney/captura1.png" alt="Imagem do projeto" />
+                                    <Image src="/images/dtmoney/captura1.png" alt="Imagem do projeto" width={720} height={351} />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/dtmoney/captura2.png" alt="Imagem do projeto" />
+                                    <Image src="/images/dtmoney/captura2.png" alt="Imagem do projeto" width={720} height={351} />
                                 </SwiperSlide>
 
                         </Swiper>
@@ -52,13 +53,13 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/impulse/captura1.png" alt="Imagem do projeto" />
+                                    <Image src="/images/impulse/captura1.png" alt="Imagem do projeto" width={720} height={361}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/impulse/captura2.png" alt="Imagem do projeto" />
+                                    <Image src="/images/impulse/captura2.png" alt="Imagem do projeto" width={720} height={361}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/impulse/captura3.png" alt="Imagem do projeto" />
+                                    <Image src="/images/impulse/captura3.png" alt="Imagem do projeto" width={720} height={361}/>
                                 </SwiperSlide>
                         </Swiper>
                         <div className={styles.descricaoProjeto}>
@@ -79,10 +80,10 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/todo/captura1.png" alt="Imagem do projeto" />
+                                    <Image src="/images/todo/captura1.png" alt="Imagem do projeto" width={720} height={434}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/todo/captura2.png" alt="Imagem do projeto" />
+                                    <Image src="/images/todo/captura2.png" alt="Imagem do projeto" width={720} height={434}/>
                                 </SwiperSlide>
 
                         </Swiper>
@@ -104,13 +105,13 @@ export default function projetos() {
                             pagination={{ clickable: true }}
                             >
                                 <SwiperSlide>
-                                    <img src="/images/timer/captura1.png" alt="Imagem do projeto" />
+                                    <Image src="/images/timer/captura1.png" alt="Imagem do projeto" width={720} height={482} />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/timer/captura2.png" alt="Imagem do projeto" />
+                                    <Image src="/images/timer/captura2.png" alt="Imagem do projeto" width={720} height={482}/>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src="/images/timer/captura3.png" alt="Imagem do projeto" />
+                                    <Image src="/images/timer/captura3.png" alt="Imagem do projeto" width={720} height={482}/>
                                 </SwiperSlide>
 
                         </Swiper>
