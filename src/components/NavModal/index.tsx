@@ -21,6 +21,7 @@ export default function NavModal({isOpen, onRequestClose}: NavModalProps) {
                     <li onClick={onRequestClose}className={router.pathname == "/skills" ? styles.activeLink : ""}><Link href="/skills">Skills</Link></li>
                     <li onClick={onRequestClose}className={router.pathname == "/projetos" ? styles.activeLink : ""}><Link href="/projetos">Projetos</Link></li>
                     <li onClick={onRequestClose}className={router.pathname == "/contato" ? styles.activeLink : ""}><Link href="/contato">Contatos</Link></li>
+                    <li className={router.pathname == "/curriculo" ? styles.activeLink : ""}><Link href="/curriculo">Currículo</Link></li>
                 </ul>
                 <button 
                 type="button" 

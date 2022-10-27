@@ -1,6 +1,7 @@
 import styles from './styles.module.scss'
-
+import Image from 'next/image'
 import {SkillCard} from '../../../skills'
+
 
 export default function SkillsCards() {
     return(
@@ -8,7 +9,7 @@ export default function SkillsCards() {
           {Object.entries(SkillCard).map(([key, value]) => {
             return(
               <div className={styles.card} key={key}>
-               <img src={value.image.source} alt={value.image.alt} />
+               <Image src={value.image.source} width={250} height={250} alt=''/>
                 <dl>
                   <dt>{value.title}</dt>
                   <dd>

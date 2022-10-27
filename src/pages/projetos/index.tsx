@@ -6,14 +6,12 @@ import styles from './styles.module.scss'
 import Head from 'next/head';
 import { PageTitle } from '../../components/PageTitle';
 import Image from 'next/image';
+import { ButtonLink } from '../../components/ButtonLink';
 
 export default function projetos() {
     return (
         <>
             <Head>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta charSet="utf-8"/>
-                <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
                 <meta name="description" content="Bruno Vigel Desenvolvedor Front-End, página de projetos"/>
                 <title>Projetos | Skills</title>
             </Head>
@@ -39,8 +37,8 @@ export default function projetos() {
                                 <p>DtMoney</p>
                                 <p>Projeto de aplicação financeira desenvolvida com React, Typescript, Styled Components e MirajeJS.</p>
                                 <div>
-                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/dtmoney">Acessar repositório</a>
-                                    <a target="_blank" rel="noreferrer" href="https://dtmoney-one-mu.vercel.app/">Acessar projeto</a>
+                                    <ButtonLink href='https://github.com/BrunoVigel/dtmoney' variant='primary' target rel title='Acessar Repositório'/>
+                                    <ButtonLink href='https://dtmoney-one-mu.vercel.app/' variant='primary' target rel title='Acessar projeto'/>
                                 </div>
                         </div>
                     </div>
@@ -66,8 +64,8 @@ export default function projetos() {
                                 <p>Impulse feedback</p>
                                 <p>Projeto de Widget de feedback utilizando React, Typescript e Tailwind CSS.</p>
                                 <div>
-                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/impulse-web">Acessar repositório</a>
-                                    <a target="_blank" rel="noreferrer" href="https://impulse-web.vercel.app/">Acessar projeto</a>
+                                    <ButtonLink href='https://github.com/BrunoVigel/impulse-web' variant='secondary' target rel title='Acessar Repositório'/>
+                                    <ButtonLink href='https://impulse-web.vercel.app/' variant='secondary' target rel title='Acessar projeto'/>
                                 </div>
                         </div>
                     </div>
@@ -91,8 +89,8 @@ export default function projetos() {
                                 <p>Todo List</p>
                                 <p>Projeto de lista de tarefas desenvolvida com React e Typescript.</p>
                                 <div>
-                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/DesafioTodo">Acessar repositório</a>
-                                    <a target="_blank" rel="noreferrer" href="https://todo-ten-beta.vercel.app/">Acessar projeto</a>
+                                    <ButtonLink href='https://github.com/BrunoVigel/DesafioTodo' variant='primary' target rel title='Acessar Repositório'/>
+                                    <ButtonLink href='https://todo-ten-beta.vercel.app' variant='primary' target rel title='Acessar projeto'/>
                                 </div>
                         </div>
                     </div>
@@ -119,14 +117,13 @@ export default function projetos() {
                                 <p>Ignite Timer</p>
                                 <p>Projeto de Timer desenvolvida com React, Styled Components e Typescript.</p>
                                 <div>
-                                    <a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/Iginite-Timer">Acessar repositório</a>
-                                    <a target="_blank" rel="noreferrer" href="https://timer-beryl.vercel.app/">Acessar projeto</a>
+                                    <ButtonLink href='https://github.com/BrunoVigel/Iginite-Timer' variant='secondary' target rel title='Acessar Repositório'/>
+                                    <ButtonLink href='https://timer-beryl.vercel.app/' variant='secondary' target rel title='Acessar projeto'/>
+
                                 </div>
                         </div>
                     </div>
                 </div>
-
-                
 
                 <div className={`${styles.githubCall} container`}>
                     <svg viewBox="0 0 128 128">
@@ -135,7 +132,7 @@ export default function projetos() {
                     <div>
                         <p>Me siga no Github</p>
                         <p>Fique por dentro dos últimos projetos que estou trabalhando.</p>
-                        <button><a target="_blank" rel="noreferrer" href="https://github.com/BrunoVigel/">Github</a></button>
+                        <ButtonLink href='https://github.com/BrunoVigel/' variant='primary' target rel title='Meu Github'/>
                     </div>
                 </div>
             </section>

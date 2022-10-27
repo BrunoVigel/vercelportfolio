@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-     
       <Header onOpenModal={handleOpenModal}/>
       <NavModal isOpen={isModalOpen} onRequestClose={handleCloseModal}/>
       <Component {...pageProps} />

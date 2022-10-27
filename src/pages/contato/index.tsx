@@ -12,9 +12,6 @@ export default function pages() {
     return(
         <>
             <Head>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta charSet="utf-8"/>
-                <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
                 <meta name="description" content="Bruno Vigel Desenvolvedor Front-End, página de contato"/>
                 <title>Contato | Skills</title>
             </Head>
@@ -38,7 +35,7 @@ export default function pages() {
                             <a target="_blank" rel="noreferrer" href="https://discord.com/users/321397092306124801"><FaDiscord />Vigel#0484</a>
                         </li>
                         <li>
-                            <a href=""><FiMail/>brunorosav@gmail.com</a>
+                            <a href="mailto:brunorosav@gmail.com"><FiMail/>brunorosav@gmail.com</a>
                         </li>
                     </ul>
                 </div>

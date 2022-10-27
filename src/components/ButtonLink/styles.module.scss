@@ -1,0 +1,27 @@
+a.btnPrimary {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    transition: .2s;
+
+    &:hover {
+        color: var(--primary-color);
+        background-color: white;
+    }
+}
+
+a.bntSecondary {
+    color: var(--primary-color);
+    background-color: white;
+    padding: 1rem 1rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    transition: .2s;
+
+    &:hover {
+        color: white;
+        background-color: var(--primary-color);
+    }
+}

@@ -21,6 +21,7 @@ export default function Header({onOpenModal}: HeaderProps) {
                             <li className={router.pathname == "/projetos" ? styles.activeLink : ""}><Link href="/projetos">Projetos</Link></li>
                             <li className={router.pathname == "/skills" ? styles.activeLink : ""}><Link href="/skills">Skills</Link></li>
                             <li className={router.pathname == "/contato" ? styles.activeLink : ""}><Link href="/contato">Contato</Link></li>
+                            <li className={router.pathname == "/curriculo" ? styles.activeLink : ""}><Link href="/curriculo">Currículo</Link></li>
                         </ul>
                     </nav>
                 </header>

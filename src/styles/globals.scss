@@ -8,13 +8,13 @@
   // variáveis de cor
   --primary-color: #a972cb; 
   --primary-text-color: #000000ad;
+  --white: #FFF;
 
 }
 
 body {
-  // background-color: #121214;
-  color: white;
-  background-color: white;
+  color: var(--white);
+  background-color: var(--white);
   color: var(--primary-text-color);
   padding-top: 2.2rem;
 }

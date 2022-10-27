@@ -1,0 +1,36 @@
+.pageCurriculo {
+    a {
+        display: flex;
+        align-items: center;
+        margin-top: 5rem;
+        position:relative;
+
+        span {
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            color: var(--primary-color);
+
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &:hover span {
+            opacity: 1;
+        }
+
+        img {
+            transition: 0.2s;
+            position:relative;
+            max-width: 50rem;
+            margin: 0 auto;
+    
+            &:hover {
+                // filter: brightness(0.2);
+                filter: blur(3px)
+            }
+        }
+    }
+}

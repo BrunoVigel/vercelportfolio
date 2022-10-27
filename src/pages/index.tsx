@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { SkillCard } from "../../skills";
 import stylesSkills from "../components/SkillsCards/styles.module.scss";
 import styles from "./styles.module.scss";
@@ -7,25 +6,28 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
 import HeroSVG from '../../public/images/svgs/hero.svg'
 import AboutSVG from '../../public/images/svgs/aboutme.svg'
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter} from 'react-simple-typewriter'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import { ButtonLink } from "../components/ButtonLink";
+import Image from 'next/image'
 
 
 export default function Home() {
   return (
     <>
       <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta charSet="utf-8"/>
-        <meta httpEquiv="X-UA-compatible" content="IE=edge"/>
         <meta name="author" content="Bruno Vigel"/>
         <meta name="description" content="Bruno Vigel Desenvolvedor Front-End"/>
         <title>Home | Portfolio</title>
       </Head>
+
+      {/* 
+      
+      Seção Hero
+      
+      */}
 
       <div className={`${styles.hero} container`}>
           <div className={styles.apresentacao}>
@@ -40,6 +42,13 @@ export default function Home() {
         <Image className={styles.img} src={HeroSVG} alt="Imagem hero"/>
       </div>
 
+
+      {/* 
+      
+      Seção AboutMe
+
+      */}
+
       <div className={`${styles.aboutMe} container`}>
         <Image className={styles.img} src={AboutSVG} alt="Imagem sobre mim"/>
         <div className={styles.text}>
@@ -48,19 +57,25 @@ export default function Home() {
         </div>
       </div>
 
+      {/* 
+      
+      Seção de Projetos
+      
+      */}
+
       <div className="container">
         <div className={styles.projectsHome}>
           <p>Projetos</p>
           <div className={styles.swiperContainer}>
             <Swiper modules={[Pagination]} pagination={{ clickable: true }}>
               <SwiperSlide>
-                <img src="/images/impulse/captura1.png" alt="Imagem do projeto"/>
+                <Image src="/images/impulse/captura1.png" alt="Imagem do projeto" width={668} height={335}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/impulse/captura2.png" alt="Imagem do projeto"/>
+                <Image src="/images/impulse/captura2.png" alt="Imagem do projeto" width={668} height={335}/>
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/images/impulse/captura3.png" alt="Imagem do projeto"/>
+                <Image src="/images/impulse/captura3.png" alt="Imagem do projeto" width={668} height={335}/>
               </SwiperSlide>
             </Swiper>
             <div className={styles.descricaoProjeto}>
@@ -68,9 +83,16 @@ export default function Home() {
               <p>Projeto de Widget de feedback utilizando React, Typescript e Tailwind CSS.</p>
             </div>
           </div>
-          <Link href="/projetos">Ver todos os projetos</Link>
+          <ButtonLink href='/projetos' variant='primary' title='Ver todos os projetos'/>
+          
         </div>
 
+
+        {/* 
+        
+        Seção de cards de Skills
+
+        */}
         <div className={styles.SectionCardHome}>
           <p>Minha skills</p>
           <div className={stylesSkills.cards}>
@@ -82,7 +104,7 @@ export default function Home() {
               ) {
                 return (
                   <div className={stylesSkills.card} key={key}>
-                    <img src={value.image.source} alt="" />
+                    <Image src={value.image.source} width={250} height={250} alt=''/>
                     <dt>{value.title}</dt>
                     <dd>{value.definition}</dd>
                   </div>
@@ -90,7 +112,7 @@ export default function Home() {
               }
             })}
           </div>
-          <Link href="/skills">Ver todas skills</Link>
+          <ButtonLink href='/skills' variant='primary' title='Ver todas skills'/>
         </div>
       </div>
     </>
