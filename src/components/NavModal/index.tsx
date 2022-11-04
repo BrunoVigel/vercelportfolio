@@ -17,11 +17,11 @@ export default function NavModal({isOpen, onRequestClose}: NavModalProps) {
         <>
             <Modal className={styles.modal} isOpen={isOpen} onRequestClose={onRequestClose}>
                 <ul>
-                    <li onClick={onRequestClose}className={router.pathname == "/" ? styles.activeLink : ""}><Link href="/">Home</Link></li>
-                    <li onClick={onRequestClose}className={router.pathname == "/skills" ? styles.activeLink : ""}><Link href="/skills">Skills</Link></li>
-                    <li onClick={onRequestClose}className={router.pathname == "/projetos" ? styles.activeLink : ""}><Link href="/projetos">Projetos</Link></li>
-                    <li onClick={onRequestClose}className={router.pathname == "/contato" ? styles.activeLink : ""}><Link href="/contato">Contatos</Link></li>
-                    <li className={router.pathname == "/curriculo" ? styles.activeLink : ""}><Link href="/curriculo">Currículo</Link></li>
+                    <li onClick={onRequestClose}><Link  href="/"><a className={router.pathname == "/" ? styles.activeLink : ""}>Home</a></Link></li>
+                    <li onClick={onRequestClose}><Link  href="/skills"><a className={router.pathname == "/skills" ? styles.activeLink : ""}>Skills</a></Link></li>
+                    <li onClick={onRequestClose}><Link  href="/projetos"><a className={router.pathname == "/projetos" ? styles.activeLink : ""}>Projetos</a></Link></li>
+                    <li onClick={onRequestClose}><Link  href="/contato"><a className={router.pathname == "/contato" ? styles.activeLink : ""}>Contatos</a></Link></li>
+                    <li onClick={onRequestClose}><Link  href="/curriculo"><a className={router.pathname == "/curriculo" ? styles.activeLink : ""}>Currículo</a></Link></li>
                 </ul>
                 <button 
                 type="button" 

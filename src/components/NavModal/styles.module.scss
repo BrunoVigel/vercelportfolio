@@ -19,7 +19,7 @@
         flex-direction: column;
         gap: 2.5rem;
 
-        li {
+        a {
             position: relative;
 
             &::after {
@@ -37,8 +37,8 @@
             &.activeLink::after {
                 width: 100%;
             }
-            &.activeLink a,
-            &:hover a {
+            &.activeLink,
+            &:hover {
                 color: var(--primary-color);
             }
         }
