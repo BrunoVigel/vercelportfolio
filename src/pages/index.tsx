@@ -105,8 +105,10 @@ export default function Home() {
                 return (
                   <div className={stylesSkills.card} key={key}>
                     <Image src={value.image.source} width={250} height={250} alt=''/>
-                    <dt>{value.title}</dt>
-                    <dd>{value.definition}</dd>
+                    <dl>
+                      <dt>{value.title}</dt>
+                      <dd>{value.definition}</dd>
+                    </dl>
                   </div>
                 );
               }
