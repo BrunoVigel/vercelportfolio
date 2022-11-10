@@ -90,17 +90,6 @@
 
     a {
         margin-top: 3rem;
-        color: white;
-        background-color: var(--primary-color);
-        padding: 1rem 2rem;
-        border: 2px solid var(--primary-color);
-        border-radius: 2rem;
-        transition: .2s;
-
-        &:hover {
-            color: var(--primary-color);
-            background-color: white;
-        }
     }
 }
 

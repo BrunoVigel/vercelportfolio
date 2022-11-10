@@ -24,7 +24,7 @@
 
     .projectContainer.bgPrimary {
         background-color: var(--primary-color);
-        color:white;
+        color:var(--white);
 
         .descricaoProjeto {
             p:nth-child(2) {
@@ -35,7 +35,7 @@
     
 
     .projectContainer.bgWhite {
-        background-color: white;
+        background-color: var(--white);
         color: var(--primary-text-color);
 
         .descricaoProjeto {
@@ -70,7 +70,7 @@
             }
 
             button {
-                color: white;
+                color: var(--white);
                 background-color: var(--primary-color);
                 padding: 1rem;
                 border-radius: 2rem;

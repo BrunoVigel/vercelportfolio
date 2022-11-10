@@ -1,27 +1,72 @@
-a.btnPrimary {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 1rem;
+
+a.btnPrimary  {
+    display: inline-block;
+    z-index: 1;
+    color: var(--primary-color);
+    padding: 1rem 1rem;
     border: 2px solid var(--primary-color);
     border-radius: 2rem;
-    transition: .2s;
+    position: relative;
 
     &:hover {
-        color: var(--primary-color);
-        background-color: white;
+      color: var(--white);
     }
-}
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.5s all ease;
+      box-sizing: border-box;
+    }
+
+    &:hover::before {
+      border-radius: 2rem;
+      transition: 0.25s all ease;
+      left: 0;
+      right: 0;
+      background: var(--primary-color);
+      opacity: 1;
+      z-index: -1;
+    }
+  }
 
 a.bntSecondary {
-    color: var(--primary-color);
-    background-color: white;
+    display: inline-block;
+    z-index: 1;
+    color: var(--white);
     padding: 1rem 1rem;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     border-radius: 2rem;
-    transition: .2s;
+    position: relative;
 
     &:hover {
-        color: white;
-        background-color: var(--primary-color);
+      color: var(--primary-color);
     }
-}
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.5s all ease;
+      box-sizing: border-box;
+    }
+
+    &:hover::before {
+      border-radius: 2rem;
+      transition: 0.25s all ease;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      opacity: 1;
+      z-index: -1;
+    }
+  }

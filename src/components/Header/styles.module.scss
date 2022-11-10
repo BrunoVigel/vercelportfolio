@@ -17,12 +17,12 @@
     .header {
         display: block;
         color: var(--primary-text-color);
-        background-color: white;
+        background-color: var(--white);
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid #e4e4e4;
+        border-bottom: 1px solid var(--white);
         padding: 0 10rem;
         z-index: 2;
         
