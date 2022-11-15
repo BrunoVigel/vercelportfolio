@@ -1,4 +1,6 @@
 .pageCurriculo {
+    animation: Fadein .3s;
+
     a {
         display: flex;
         align-items: center;
@@ -34,3 +36,13 @@
         }
     }
 }
+
+@keyframes Fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
