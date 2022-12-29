@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <ThemeProvider>
+      <ThemeProvider enableSystem={false}>
         <Header onOpenModal={handleOpenModal}/>
         <NavModal isOpen={isModalOpen} onRequestClose={handleCloseModal}/>
         <Component {...pageProps} />
