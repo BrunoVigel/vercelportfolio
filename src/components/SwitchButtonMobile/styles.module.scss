@@ -26,8 +26,7 @@
     
     
     .SwitchRoot[data-state='checked'] {
-    background-color: #090936;
-    
+        background-color:#0079D3;
     }
       
     .SwitchThumb {
@@ -43,7 +42,7 @@
     
     .SwitchThumb[data-state='checked'] {
     transform: translateX(19px);
-    background-color: var(--primary-text-color);
+    background-color: #090936;
     box-shadow:
     inset -3px -2px 5px -2px #8983f7,
     inset -10px -4px 0 0 #a3dafb;
