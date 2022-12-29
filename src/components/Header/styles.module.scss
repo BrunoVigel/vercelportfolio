@@ -16,51 +16,55 @@
 
     .header {
         display: block;
-        color: var(--primary-text-color);
-        background-color: var(--white);
+        color: var(--primary-color);
+        background-color: var(--background-color);
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid var(--white);
         padding: 0 10rem;
         z-index: 2;
         
-
-        ul {
-            width: 100%;
+        nav {
             display: flex;
-            gap: 1.5rem;
-            padding: 1rem 0;
+            align-items: center;
 
-            li {
-                position: relative;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: var(--primary-color);
-                    height: 2px;
-                    width: 0;
-                    left: 0;
-                    bottom: -16px;
-                    transition: 0.2s;
-                }
+            ul {
+                width: 100%;
+                display: flex;
+                gap: 1.5rem;
+                padding: 1rem 0;
     
-                &:hover::after,
-                &.activeLink::after {
-                    width: 100%;
-                }
-                &.activeLink a,
-                &:hover a {
-                    color: var(--primary-color);
-                }
-                a {
-                    font-size: 1.5rem;
-                    
+                li {
+                    position: relative;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background-color: var(--primary-color);
+                        height: 2px;
+                        width: 0;
+                        left: 0;
+                        bottom: -8px;
+                        transition: 0.2s;
+                    }
+        
+                    &:hover::after,
+                    &.activeLink::after {
+                        width: 100%;
+                    }
+                    &.activeLink a,
+                    &:hover a {
+                        color: var(--primary-color);
+                    }
+                    a {
+                        font-size: 1.5rem;
+                    }
                 }
             }
         }
+
+        
     }
 }
 

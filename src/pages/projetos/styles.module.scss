@@ -35,7 +35,7 @@
     
 
     .projectContainer.bgWhite {
-        background-color: var(--white);
+        background-color: var(--background-color);
         color: var(--primary-text-color);
 
         .descricaoProjeto {
@@ -54,6 +54,7 @@
 
         svg {
             max-width: 25rem;
+            fill:var(--primary-text-color);
         }
 
         div {
@@ -127,10 +128,13 @@
 @media (min-width: 1600px) {
     .section {
         .projectContainer {
+
             .swiperContainer {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                min-height: 490px;
+
             }
         }
     }

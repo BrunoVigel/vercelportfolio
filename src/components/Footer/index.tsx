@@ -9,7 +9,7 @@ export default function Footer(){
                 <div className={styles.footerContent}>
                     <div className={styles.brand}>
                         <Link href='/'>
-                            <a>Bruno<span>Vigel</span>.</a>
+                            Bruno<span>Vigel</span>.
                         </Link>
                         <p>Vamos trabalhar juntos!</p>
                         <p>©2022.Todos os direitos reservados.</p>

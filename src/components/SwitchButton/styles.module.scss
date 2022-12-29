@@ -1,0 +1,52 @@
+.SwitchContainer {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    gap: 1rem;
+
+    label {
+        min-width: 6.25rem;
+    }
+
+}
+
+.SwitchRoot {
+    width: 45px;
+    height: 25px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 9999px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+    }
+    
+    
+    .SwitchRoot[data-state='checked'] {
+    background-color:#0079D3;
+    }
+      
+    .SwitchThumb {
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 9999px;
+    transition: transform 100ms;
+    transform: translateX(2px);
+    will-change: transform;
+    background-color: var(--white);
+    }
+    
+    .SwitchThumb[data-state='checked'] {
+    transform: translateX(19px);
+    background-color: rgb(9, 9, 54);
+    box-shadow:
+    inset -3px -2px 5px -2px #8983f7,
+    inset -10px -4px 0 0 #a3dafb;
+    }
+      
+    .Label {
+    color: var(--primary-text-color);
+    font-size: 15px;
+    line-height: 1;
+    user-select: none;
+    }
