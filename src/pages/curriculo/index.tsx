@@ -12,11 +12,10 @@ export default function curriculo() {
             </Head>
             <div className={`${styles.pageCurriculo} container`}>
 
-                <PageTitle title="Currículo" subtitle="Currículo também disponível para download"/>
+                <PageTitle title="Currículo" subtitle="Clique para fazer o download do currículo"/>
 
                 <Link href="/downloadfile/bruno-vigel-curriculo.pdf" target="_blank">
                     <img src="/images/printCurriculo.png" alt="" />
-                    <span>Clique para fazer download</span>
                 </Link>
             </div>
         </>
