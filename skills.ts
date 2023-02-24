@@ -146,4 +146,14 @@ export const SkillCard = [
       alt: "Logo Wordpress",
     },
   },
+  {
+    title: "Python",
+    definition:
+      "O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML).",
+    image: {
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+      alt: "Logo Python",
+    },
+  },
 ];

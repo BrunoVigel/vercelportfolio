@@ -53,7 +53,7 @@ export default function Home() {
         <Image className={styles.img} src={AboutSVG} alt="Imagem sobre mim"/>
         <div className={styles.text}>
           <p>Sobre mim</p>
-          <p>Olá! Meu nome é Bruno, tenho 22 anos e sou desenvolvedor FrontEnd. Apaixonado por aprender novas tecnologias e técnicas, pensando na funcionalidade das aplicações e na forma mais limpa de desenvolvê-las.</p>
+          <p>Olá! Meu nome é Bruno, tenho 23 anos e sou desenvolvedor FrontEnd. Apaixonado por aprender novas tecnologias e técnicas, pensando na funcionalidade das aplicações e na forma mais limpa de desenvolvê-las.</p>
         </div>
       </div>
 
